@@ -1,44 +1,34 @@
 ---
 layout: post
-title: Introducing Lanyon
+title: Traveling Salesperson Problem
 ---
 
-Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
+### Introduction
+Basically,the Traveling Salesperson Problem is looking for the shortest path for options.
+In a list of given cities and the distances between each city, what is the possible shortest route that visits each city exactly once and returns to the origin city?
 
-### Built on Poole
+### Maps Example
+In my case of the Traveling Salesperson Problem, I chose four American auto museums as my four destinations. Respectively, they are America's Car Museum, Simeone Foundation Automotive Museum, California Auto Museum, and The Henry Ford Museum.
 
-Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by [@mdo](https://twitter.com/mdo). Poole, and every theme built on it (like Lanyon here) includes the following:
+There are three different routes in these four destinations, and I show these three different routes and the total mileage required in the following examples. Comparisons allow me to have the shortest and fastest route scenarios.
 
-* Complete Jekyll setup included (layouts, config, [404](/404), [RSS feed](/atom.xml), posts, and [example page](/about))
-* Mobile friendly design and development
-* Easily scalable text and component sizing with `rem` units in the CSS
-* Support for a wide gamut of HTML elements
-* Related posts (time-based, because Jekyll) below each post
-* Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)
+### Example One:
 
-### Lanyon features
+In my first scenario, in order, the places to travel are Simeone Foundation Auto Museum, The Henry Ford Museum, America's Car Museum, California AutoMotive Museum, and finally back to Simone Foundation Automotive Museum. The total mileages are 6455.
 
-In addition to the features of Poole, Lanyon adds the following:
+<iframe width="120%" height="1000" frameborder="0"
+  src="https://observablehq.com/embed/@xianli/map-1?cell=*"></iframe>
 
-* Toggleable sliding sidebar (built with only CSS) via **☰** link in top corner
-* Sidebar includes support for textual modules and a dynamically generated navigation with active link support
-* Two orientations for content and sidebar, default (left sidebar) and [reverse](https://github.com/poole/lanyon#reverse-layout) (right sidebar), available via `<body>` classes
-* [Eight optional color schemes](https://github.com/poole/lanyon#themes), available via `<body>` classes
+### Example Two:
 
-[Head to the readme](https://github.com/poole/lanyon#readme) to learn more.
+In my second scenario, in order, the places to travel are Simeone Foundation Auto Museum, The Henry Ford Museum, California AutoMotive Museum, America's Car Museum, and finally back to Simone Foundation Automotive Museum. The total mileages are 6454 which is the shortest path.
 
-### Browser support
+<iframe width="120%" height="1000" frameborder="0"
+  src="https://observablehq.com/embed/@xianli/map-2?cell=*"></iframe>
 
-Lanyon is by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.
+### Example Three:
 
-### Download
+In my third scenario, in order, the places to travel are Simeone Foundation Auto Museum,California AutoMotive Museum, The Henry Ford Museum, America's Car Museum, and finally back to Simone Foundation Automotive Museum. The total mileages are 10285 which is the longest path.
 
-Lanyon is developed on and hosted with GitHub. Head to the <a href="https://github.com/poole/lanyon">GitHub repository</a> for downloads, bug reports, and features requests.
-
-Thanks!
-
-{% highlight javascript linenos %}
-for(let i = 0; i<=100;i++){
-console.log(i)
-}
-{% endhighlight %}
+<iframe width="120%" height="1000" frameborder="0"
+  src="https://observablehq.com/embed/@xianli/map-3?cell=*"></iframe>
